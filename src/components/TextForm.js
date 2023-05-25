@@ -68,7 +68,7 @@ export default function TextForm(props) {
         <h3>Preview</h3>
         <p>
           {text === "Enter text here.." && text.length > 0
-            ? "Enter something in the abovce text box to preview it here..."
+            ? "Enter something in the above text box to preview it here..."
             : text}
         </p>
       </div>
