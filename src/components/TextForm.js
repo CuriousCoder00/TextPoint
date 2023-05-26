@@ -7,29 +7,33 @@ export default function TextForm(props) {
   };
   const handleOnFocus = () => {
     if (text === "Enter text here..") {
-      setText(" ");
+      setText("");
     } else {
       setText(text);
     }
   };
   const handleUpClick = () => {
     setText(text.toUpperCase());
+    props.showAlert("Text has been coverted to uppercase!", "success");
   };
   const handleLowClick = () => {
     setText(text.toLowerCase());
+    props.showAlert("Text has been coverted to lowercase!", "success");
   };
   const handleCleartext = () => {
     setText("Enter text here..");
+    props.showAlert("Text has been cleared from text box!", "danger");
   };
   const handleCopy = () => {
     let textBox = document.getElementById("myTextbox");
     textBox.select();
     navigator.clipboard.writeText(textBox.value);
+    props.showAlert("Text has been copied to clipboard!", "success");
   };
 
 
   return (
-    <div className={`container text-${props.theme==='dark'?'light':'dark'}`}>
+    <div className={`container my-4 text-${props.theme==='dark'?'light':'dark'}`}>
       <div className="container">
         <h3 className="mt-2">{props.heading}</h3>
         <div className="mt-3 mb-3">
