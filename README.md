@@ -20,13 +20,13 @@ This is a Text Utility Website, that can help in manipulating texts effortlessly
 
 ## Features:
 
-1. Text Conversion:
-    => Uppercase: Convert any text or paragraph to uppercase letters.
-    => Lowercase: Transform your text or paragraph into lowercase letters.
-2. Text Manipulation:
-    => Copy Text: Quickly copy the modified text to your clipboard for easy pasting.
-    => Clear Text: Instantly clear the input area to start with a fresh text.
-3. Text Analysis:
-    => Word Count: Get an accurate count of the number of words in your text or paragraph.
-    => Character Count: Determine the total number of characters, including spaces, in your text.
-    => Reading Time: Find out how long it would take an average.
+1. Text Conversion:\
+    => Uppercase: Convert any text or paragraph to uppercase letters.\
+    => Lowercase: Transform your text or paragraph into lowercase letters.\
+2. Text Manipulation:\
+    => Copy Text: Quickly copy the modified text to your clipboard for easy pasting.\
+    => Clear Text: Instantly clear the input area to start with a fresh text.\
+3. Text Analysis:\
+    => Word Count: Get an accurate count of the number of words in your text or paragraph.\
+    => Character Count: Determine the total number of characters, including spaces, in your text.\
+    => Reading Time: Find out how long it would take an average.\
