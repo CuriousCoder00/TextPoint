@@ -20,7 +20,7 @@ This is a Text Utility Website, that can help in manipulating texts effortlessly
 
 ## Features:
 
-1. Text Conversion:
+1. Text Conversion:\n
     => Uppercase: Convert any text or paragraph to uppercase letters.
     => Lowercase: Transform your text or paragraph into lowercase letters.
 2. Text Manipulation:
