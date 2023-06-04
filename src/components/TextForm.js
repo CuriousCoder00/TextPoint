@@ -28,6 +28,7 @@ export default function TextForm(props) {
     let textBox = document.getElementById("myTextbox");
     textBox.select();
     navigator.clipboard.writeText(textBox.value);
+    document.getSelection().removeAllRanges();
     props.showAlert("Text has been copied to clipboard!", "success");
   };
 
@@ -48,25 +49,25 @@ export default function TextForm(props) {
         </div>
       </div>
       <div className="container">
-        <button className={`btn btn-${props.theme==='dark'?'primary':'dark'} mx-1`} onClick={handleUpClick}>
+        <button disabled={text.length===0} className={`btn btn-${props.theme==='dark'?'primary':'dark'} mx-1 my-2`} onClick={handleUpClick}>
           Convert To Uppercase
         </button>
-        <button className={`btn btn-${props.theme==='dark'?'primary':'dark'} mx-1`} onClick={handleLowClick}>
+        <button disabled={text.length===0} className={`btn btn-${props.theme==='dark'?'primary':'dark'} mx-1 my-2`} onClick={handleLowClick}>
           Convert To Lowercase
         </button>
-        <button className={`btn btn-${props.theme==='dark'?'primary':'dark'} mx-1`} onClick={handleCleartext}>
+        <button disabled={text.length===0} className={`btn btn-${props.theme==='dark'?'primary':'dark'} mx-1 my-2`} onClick={handleCleartext}>
           Clear Text
         </button>
-        <button className={`btn btn-${props.theme==='dark'?'primary':'dark'} mx-1`} onClick={handleCopy}>
+        <button disabled={text.length===0} className={`btn btn-${props.theme==='dark'?'primary':'dark'} mx-1 my-2`} onClick={handleCopy}>
           Copy Text
         </button>
       </div>
       <div className="container my-3">
         <h3>Your Text Summary</h3>
         <p>
-          {text.split(" ").length} words and {text.length} characters
+          {text.split(" ").filter((ele)=>{return ele.length!==0}).length} words and {text.length} characters
         </p>
-        <p>{0.011 * text.split(" ").length} Minutes Average Reading Time</p>
+        <p>{0.011 * text.split(" ").filter((ele)=>{return ele.length!==0}).length} Minutes Average Reading Time</p>
       </div>
       <div className="container">
         <h3>Preview</h3>

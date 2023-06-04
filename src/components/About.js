@@ -10,7 +10,7 @@ export default function About(props) {
         <hr className={`text-${props.theme === "dark" ? "light" : "dark"}`} />
         <div className="container">
           <p
-            className={`fs-5 text-${props.theme === "dark" ? "light" : "dark"}`}
+            className={`text-${props.theme === "dark" ? "light" : "dark"}`}
           >
             Welcome to our Text Utility Website, your go-to destination for
             manipulating texts effortlessly. Whether you need to convert text to
@@ -19,7 +19,7 @@ export default function About(props) {
             time, our website has got you covered.
           </p>
           <p
-            className={`fs-5 text-${props.theme === "dark" ? "light" : "dark"}`}
+            className={`text-${props.theme === "dark" ? "light" : "dark"}`}
           >
             Our mission is to provide a user-friendly platform that allows you
             to conveniently modify and analyze text according to your needs.
@@ -31,57 +31,57 @@ export default function About(props) {
             Features:
           </h2>
           <div
-            className={`container p-3 rounded-5 fs-5 bg-${
+            className={`container p-3 rounded-5 bg-${
               props.theme === "dark" ? "black" : "info-subtle"
             } text-${props.theme === "dark" ? "light" : "dark"}`}
           >
             <ol>
               <li>
-                Text Conversion:
+                <strong>Text Conversion:</strong>
                 <ul>
                   <li>
-                    Uppercase: Convert any text or paragraph to uppercase
+                  <strong>Uppercase:</strong> Convert any text or paragraph to uppercase
                     letters.
                   </li>
                   <li>
-                    Lowercase: Transform your text or paragraph into lowercase
+                  <strong>Lowercase:</strong> Transform your text or paragraph into lowercase
                     letters.
                   </li>
                 </ul>
               </li>
               <li>
-                Text Manipulation:
+              <strong>Text Manipulation:</strong>
                 <ul>
                   <li>
-                    Copy Text: Quickly copy the modified text to your clipboard
+                  <strong>Copy Text:</strong> Quickly copy the modified text to your clipboard
                     for easy pasting.
                   </li>
                   <li>
-                    Clear Text: Instantly clear the input area to start with a
+                  <strong>Clear Text:</strong> Instantly clear the input area to start with a
                     fresh text.
                   </li>
                 </ul>
               </li>
               <li>
-                Text Analysis:
+              <strong>Text Analysis:</strong>
                 <ul>
                   <li>
-                    Word Count: Get an accurate count of the number of words in
+                  <strong>Word Count:</strong> Get an accurate count of the number of words in
                     your text or paragraph.
                   </li>
                   <li>
-                    Character Count: Determine the total number of characters,
+                  <strong>Character Count:</strong> Determine the total number of characters,
                     including spaces, in your text.
                   </li>
                   <li>
-                    Reading Time: Find out how long it would take an average.
+                  <strong>Reading Time:</strong> Find out how long it would take an average.
                   </li>
                 </ul>
               </li>
             </ol>
           </div>
           <p
-            className={`fs-5 text-${props.theme === "dark" ? "light" : "dark"}`}
+            className={`text-${props.theme === "dark" ? "light" : "dark"}`}
           >
             Our website is designed to be intuitive and user-friendly, ensuring
             a seamless experience for all visitors. Simply input your text or
@@ -90,7 +90,7 @@ export default function About(props) {
             you'll have the desired result or information at your fingertips.
           </p>
         </div>
-        <p className={`fs-5 rounded-3 bg-${props.theme === "dark" ? "warning-subtle" : "dark"} p-3 text-${props.theme === "dark" ? "transparent" : "light"}`}>
+        <p className={`rounded-3 bg-${props.theme === "dark" ? "warning-subtle" : "dark"} p-3 text-${props.theme === "dark" ? "transparent" : "light"}`}>
           Thank you for choosing our Text Utility Website. We are committed to
           continually improving our services and tools to meet your text-related
           needs. If you have any questions, suggestions, or feedback, please

@@ -11,6 +11,9 @@
 # production
 /build
 
+package.json
+package-lock.json
+.gitignore
 # misc
 .DS_Store
 .env.local
